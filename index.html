@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alca Company</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="img/logonegro.png" alt="Logo" />
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar producto..." />
+            <button type="submit">Buscar</button>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#products"><b>PRODUCTOS</b></a>
+              </li>
+              <li>
+                <a href="#marcas"><b>MARCAS</b></a>
+              </li>
+              <li>
+                <a href="#"><b>CONTACTOS</b></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECCION GALERIA -->
+    <div class="gallery-container">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <div class="gallery">
+        <div class="image">
+          <img src="img/img2.PNG" alt="Imagen 1" />
+        </div>
+        <div class="image">
+          <img src="img/img1.PNG" alt="Imagen 2" />
+        </div>
+        <div class="image">
+          <img src="img/img3.PNG" alt="Imagen 3" />
+        </div>
+        <!-- Agrega más imágenes según sea necesario -->
+      </div>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script src="index.js"></script>
+
+    <!-- SECCION PRODUCTOS -->
+    <section id="products">
+      <div class="title-product">
+        <p>NUESTROS <b>PRODUCTOS</b></p>
+      </div>
+      <div class="card-container">
+        <div class="card">
+            <a href="https://alcacompany.com/categoria-producto/lineas-de-vida/">
+              <img src="img/producto1.PNG" alt="Imagen 1" />
+            </a>
+            <a href="https://alcacompany.com/categoria-producto/lineas-de-vida/" style="text-decoration: none"><h4>Arnés y Líneas de Vida</h4></a>
+            <p>
+              Puntos mazo que cuelga con sistema Riplight y caída del testigo DeltaPlus Peru
+            </p>
+          </div>
+        <div class="card">
+          <img src="img/producto2.PNG" alt="Imagen 2" />
+          <h4>Calzado Industrial</h4>
+          <p>
+            Calzado de seguridad de alta tecnología, con diseño moderno y
+            funcional.
+          </p>
+        </div>
+        <div class="card">
+          <img src="img/producto3.PNG" alt="Imagen 3" />
+          <h4>Cascos de Seguridad</h4>
+          <p>
+            Casco de seguridad con suspensión de 4 puntos y ajuste de matraca es
+            un casco cómodo, resistente y ligero.
+          </p>
+        </div>
+        <div class="card">
+          <img src="img/producto4.PNG" alt="Imagen 4" />
+          <h4>Guantes de Seguridad</h4>
+          <p>
+            Guante con una resistencia al corte suprema combinada con un
+            soberbio agarre en condiciones aceitosas
+          </p>
+        </div>
+      </div>
+      <div class="button">
+        <a href="https://alcacompany.com/productos/" class="all-products-btn" style="text-decoration: none;">TODOS LOS PRODUCTOS</a>
+      </div>
+      </div>
+    </section>
+
+    <!-- SECCION MARCAS -->
+    <section id="marcas">
+      <div class="marcas">
+        <div class="row">
+          <div class="column">
+            <img src="img/marca1.png" alt="Imagen 1" />
+          </div>
+          <div class="column">
+            <img src="img/marca2.png" alt="Imagen 2" />
+          </div>
+          <div class="column">
+            <img src="img/marca4.png" alt="Imagen 3" />
+          </div>
+          <div class="column">
+            <img src="img/marca5.png" alt="Imagen 4" />
+          </div>
+          <div class="column">
+            <img src="img/marca6.png" alt="Imagen 5" />
+          </div>
+          <div class="column">
+            <img src="img/marca3.png" alt="Imagen 6" />
+          </div>
+          <div class="column"><img src="img/marca8.png" alt="Imagen 7" /></div>
+
+          <div class="button">
+            <a href="https://alcacompany.com/marcas/" class="all-products-btn" style="text-decoration: none;">TODOS LAS MARCAS</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-content">
+            <h2>¡Contáctanos!</h2>
+            <p>Estamos aquí para ayudarte. ¡No dudes en ponerte en contacto con nosotros!</p>
+        </div>
+    </section>
+
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="footer-column">
+      <h3>¿Quiénes somos?</h3>
+      <p>
+        Empresa peruana dedicada a la comercialización de productos de seguridad industrial, ofreciendo soluciones en los sectores de industria, minería, química, petróleo, construcción y servicios.
+      </p>
+    </div>
+    <div class="footer-column">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="#">Duchas y Lavajos</a></li>
+        <li><a href="#">Cascos de seguridad</a></li>
+        <li><a href="#">Linea de absorbentes</a></li>
+        <li><a href="#">Arnes de Linea de vida</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Marcas</h3>
+      <ul>
+        <li>CAT</li>
+        <li>3M</li>
+        <li>DELTA PLUS</li>
+        <li>DUPONT</li>
+        <li>TOWA</li>
+        <li>HONEYWELL</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contacto</h3>
+      <ul>
+        <li>Teléfono: 123-456-789</li>
+        <li>Email: info@empresa.com</li>
+        <li>Dirección: Calle Principal, Ciudad</li>
+      </ul>
+    </div>
+  </footer>
+</html>
